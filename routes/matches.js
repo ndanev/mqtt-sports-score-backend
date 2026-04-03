@@ -90,7 +90,7 @@ export function matchRoutes(mqttClient) {
         team,
         player: player || 'Unknown',
         minute: minute ?? match.minute,
-        description: description || `\({type}: \){player}`,
+        description: description || '',
         timestamp: new Date().toISOString(),
       };
 
